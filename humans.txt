@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <marchen> -- <developer> -- <844033231@qq.com>
+
+# THANKS
+
+    <github, node, npm...>
+
+# TECHNOLOGY COLOPHON
+
+    react, redux,
+    nodejs, nodemon, Normalize.css, less, babel, webpack

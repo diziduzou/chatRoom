@@ -1,0 +1,44 @@
+*{
+	margin:0;padding: 0;font-family: '微软雅黑'
+}
+body {  
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;  
+    -khtml-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    user-select: none;  
+}  
+.hide{
+	display:none;
+}
+.selected {
+	background: #f0f0f0;
+}
+li{
+	list-style:none;
+}
+input{
+	width: 356px;height:45px;
+}
+.lists{
+	width:360px;margin:20px auto;border-bottom:1px solid #ddd;
+}
+.Item{
+	cursor:pointer;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;border-top:1px solid #ddd;padding:10px;
+}
+.Item:hover{
+	background: #FCF0C1;
+}
+.Item .top{
+	display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: center;width:245px;line-height: 45px;
+}
+.Item .bottom{
+	line-height: 30px;
+}
+.Item .left{
+	display: flex;flex-direction: column;justify-content: center;width:50px;
+}
+.Item .left img{
+	width:100%;
+}
