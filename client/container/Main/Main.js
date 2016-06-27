@@ -2,8 +2,8 @@ import React, {
 	Component
 } from 'react';
 import ReactDom from 'react-dom'
-import Lists from './component/lists'
-import style from './component/lists/style.css'
+import Lists from '../../component/lists'
+import style from '../../component/lists/style.css'
 class Loading extends Component {
 	constructor(props) {
 		super(props);
