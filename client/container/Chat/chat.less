@@ -1,0 +1,69 @@
+.Chat{
+	display: flex;
+	flex-flow:column nowrap;
+	
+	width:40%;margin:10px auto;
+	.in{
+		text-align: right;
+	}
+	.side{
+		text-align: left;
+	}
+	.body{
+		flex:1;height:600px;overflow-y:auto;
+		ul{
+			color:#fff;border:1px solid #ddd;
+			li{
+				padding:10px 10px;
+				img{
+					border:0;
+					width:40px;height: 40px;
+					border-radius: 50%;
+				}
+				.word{
+					display: inline-block;
+					font: 14px;
+					margin:0 10px;
+					padding:10px;
+					border:1px solid #eaeaea;
+					background: #f36976;
+					border-radius:40% 10% 40% 10%;
+				}
+				&.side{
+					img{
+						float:left;display: block;
+					}
+				}
+				&.in{
+					img{
+						float:right;display: block;
+					}
+				}
+			}
+
+		}
+	}
+	.title{
+		background: #f36976;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		line-height: 45px;
+		color:#fff;
+		h1{
+			font-size:16px;
+		}
+		a{
+			color:#fff;text-decoration: none;font-size:20px;margin-right: 15px;
+		}
+	}
+	.submit{
+		margin-top: 30px;display: flex;justify-content:space-between;
+		input{
+			width:45%;height:45px;
+			&[type='submit']{
+				height: 49px;
+			}
+		}
+	}
+}

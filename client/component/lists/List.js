@@ -1,5 +1,6 @@
 import React, {
-	Component
+	Component,
+	PropTypes
 } from 'react'
 import {
 	formatTime
@@ -40,6 +41,9 @@ class Item extends Component {
 }
 
 class MainContnt extends Component {
+	static contextTypes = {
+		router: PropTypes.object
+	}
 	static defalutProps = {
 		list: []
 	}
@@ -63,9 +67,12 @@ class MainContnt extends Component {
 		})
 		this.setState(this.state)
 	}
+	dbclick(e, index) {
+		this.context.router.push('/Chat')
+	}
 	render() {
 		const mainContent = (<ul>
-				{this.state.lists.map((value,index) => <li key={value+index} className={value.isSelect?'selected':''}  onClick={(e)=>{this._onClick.bind(this)(e,index)}}><Item Item={value}></Item></li>)}
+				{this.state.lists.map((value,index) => <li key={value+index} className={value.isSelect?'selected':''}  onClick={(e)=>{this._onClick.bind(this)(e,index)}} onDoubleClick={(e)=>{this.dbclick.bind(this)(e,index)}}><Item Item={value}></Item></li>)}
 			</ul>)
 		return <div>
 			{mainContent}

@@ -10,6 +10,7 @@ import ReactDom from 'react-dom'
 import Main from './container/Main'
 import Login from './container/Login'
 import NotFound from './container/NotFound'
+import Chat from './container/Chat'
 
 class App extends Component {
 	render() {
@@ -17,6 +18,7 @@ class App extends Component {
 			<Router histroy={hashHistory}>
 				<Route component={Main} path='/Main'></Route>
 				<Route component={Login} path='/'></Route>
+				<Route component={Chat} path='/Chat'></Route>
 				<Route component={NotFound} path='/*'></Route>
 			</Router>
 		);
